@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <!-- Gambar produk besar -->
+    <ImageView
+        android:id="@+id/gambar"
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        android:src="@drawable/ic_launcher_foreground" />
+
+    <!-- Nama produk -->
+    <TextView
+        android:id="@+id/detailProductName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Nama Produk"
+        android:textSize="18sp"
+        android:layout_marginTop="16dp"/>
+
+    <!-- Harga produk -->
+    <TextView
+        android:id="@+id/detailProductPrice"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Harga: Rp 100.000"
+        android:textSize="16sp"
+        android:layout_marginTop="8dp"/>
+
+    <!-- Stok produk -->
+    <TextView
+        android:id="@+id/detailProductStock"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Stok: 10"
+        android:textSize="14sp"
+        android:layout_marginTop="8dp"/>
+
+    <!-- Deskripsi produk -->
+    <TextView
+        android:id="@+id/detailProductDescription"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Deskripsi produk"
+        android:textSize="14sp"
+        android:layout_marginTop="8dp"/>
+</LinearLayout>

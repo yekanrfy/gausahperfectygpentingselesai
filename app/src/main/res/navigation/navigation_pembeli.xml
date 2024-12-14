@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/navigation"
+    app:startDestination="@id/fragmentLogin">
+
+    <!-- Definisi Fragment Login -->
+    <fragment
+        android:id="@+id/fragmentLogin"
+        android:name="com.aplikasi.tokoyeka.FragmentLogin"
+        android:label="FragmentLogin">
+        <action
+            android:id="@+id/action_fragmentLogin_to_categoryFragment"
+            app:destination="@id/categoryFragment" />
+    </fragment>
+
+    <!-- Definisi Fragment Category -->
+    <fragment
+        android:id="@+id/categoryFragment"
+        android:name="com.aplikasi.tokoyeka.CategoryFragment"
+        android:label="CategoryFragment"
+        tools:layout="@layout/fragment_category">
+
+        <!-- Action untuk berpindah ke halaman Product -->
+        <action
+            android:id="@+id/action_categoryFragment_to_productFragment"
+            app:destination="@id/productFragment" />
+    </fragment>
+
+    <!-- Definisi Fragment Product dengan Argument categoryName -->
+    <fragment
+        android:id="@+id/productFragment"
+        android:name="com.aplikasi.tokoyeka.ProductFragment"
+        android:label="ProductFragment">
+        <argument
+            android:name="categoryName"
+            app:argType="string" />
+    </fragment>
+
+</navigation>
